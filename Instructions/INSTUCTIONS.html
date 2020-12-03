@@ -1,0 +1,197 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Football Dribble</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;FootballDribble&rdquo; Documentation by &ldquo;Tobiasz Brzezinski&rdquo; v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;FootballDribble&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 24/10/2016<br>
+					By: Tobiasz Brzezinski<br>
+					Website: <a href="http://uncertainstudio.com">uncertainstudio.com</a><br>
+					Email: <a href="mailto:uncertainstudio@gmail.com">uncertainstudio@gmail.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my game. If you have any questions that are beyond the scope of this help file, please feel free to email me. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#htmlStructure">Introduction</a></li>
+			<li><a href="#cssFiles">Ads</a></li>
+			<li><a href="#javascript">Ads</a></li>
+			<li><a href="#psdFiles">Export for mobile </a></li>
+			<li><a href="#credits">Publish</a></li>
+			<li><a href="#moreguides">More guides</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="htmlStructure"><strong>A) Introduction</strong> - <a href="#toc">top</a></h3>
+		<p>You bought a HTML5 Game which was made in Construct 2. To edit this game you will need to get the software
+which you can get for free on: http://www.scirra.com. However, after you made changes in the .capx, for publishing and making money with it, you have to get a license.
+
+In the files folder you will find the game .capx, open this file with Construct 2 to edit anything in the game.
+I have made the code easy readable, however if you have trouble or no experience in editing Construct 2 files you can
+find a guide to almost anything at: <a href="https://www.scirra.com/tutorials/top">Scirras Tutorial Page</a>.<br>
+There is also <a href="https://www.scirra.com/tutorials/4848/how-to-get-admob-official-plugin-working-on-android-crosswalk/page-1">a realy great guide from Kyatric at the Scirra Tutorial Page</a>. This guide has all the steps i have listened and even includes the creation procedure of an AdMob account plus creating new Banner Ads. </p>
+		
+		<hr>
+
+		<h3 id="cssFiles"><strong>B) Upload to your library</strong> - <a href="#toc">top</a></h3>
+
+		<p>If you just want to upload the game to your online-library, without any changes like adding ads, you can upload the "HTML" folder. 
+Rename the folder to your needs. Don't change anything in the HTML folder.<br><br>
+
+The "PNG_Ai" and "Sounds" folder are just your resource files, so you can produce advertising etc. Do not upload them with the game or sell them.</p> 
+
+
+		<hr>
+		
+		<h3 id="javascript"><strong>C) Ads</strong> - <a href="#toc">top</a></h3>
+		
+		<p>Scirra has a great documentation. You can use their guide for further information at: https://www.scirra.com/manual/184/admob</p>
+		
+		I have prepared my file to activate AdMob ads as easy as possible. To activate this functionaltiy you have to
+		follow these steps: <br><br>
+
+		<ol>
+			<li>Open the file "FootballDribble.capx" in Construct 2 and edit the "AdsActivated" variable in the ads Event Sheet. Set the default value from 0 to 1. <br>
+		<img src="assets/images/howtoads1.png" alt="HTML5 Game" />
+
+			</li>
+			<br><br>
+			<li>Now select the Admob plugin under the Object Types folder and set your needed Banner IDs in the AdmobAds Properties (make sure you don't add empty spaces at the end):  <br>
+		<img src="assets/images/howtoads2.png" alt="HTML5 Game" />
+
+			</li>
+		</ol>
+		 
+		<br>
+		That's it! Now you just have to export the file to HTML or for mobile devices. The next point explains how to export
+		to mobile in detail. The HTML export is much easier. You just have to click on the top panel of Construct 2 on "Export project" and select HTML, follow the steps on screen and create. After that you can upload the folder to your FTP.<br>
+		<br>
+		<hr>
+		
+		<h3 id="psdFiles"><strong>D) Export for mobile </strong> - <a href="#toc">top</a></h3>
+		
+		After you made changes to the Construct 2 file you have to export the project.
+
+		Again there is a great Scirra guide <a href="https://www.scirra.com/tutorials/71/how-to-export-to-mobile-with-phonegap">here</a> which you can use for further explanations, or you just use my guide below.<br>
+		<br>
+		<p>Follow these steps to export for mobile:</p>
+		
+			<ol>
+				<li>To export you have to click on the top panel of Construct 2 on "Export project": <br>
+		<img src="assets/images/exportbutton.png" alt="HTML5 Game" /></li>
+				<li>Now you have to choose the platform you want to export to. Under the mobile section select Cordova, which builds files for Android, iOS and Windows Phone: <br>
+		<img src="assets/images/exportmobile1.png" alt="HTML5 Game" /></li>
+				<li>In the next step you can set your "Export options", leave them by default or if you don't have Java installed on your machine, you can remove the "Minify script (recommended)" check mark.<br>
+		<img src="assets/images/exportmobile2.png" alt="HTML5 Game" /></li>				
+		<li>Finally there are various Cordova options. Leave them by default as shown on the screenshot. Of course you can exclude "iOS, Windows Phone (.m4a)" if you wish just to export for Android or vice versa.<br>
+		<img src="assets/images/exportmobile3.png" alt="HTML5 Game" /></li>
+			</ol>
+		<hr>
+
+		<h3 id="javascript"><strong>E) Publish</strong> - <a href="#toc">top</a></h3>
+
+		<p>Once your export is done, you have to use a publishing methode. Here are some providers:</p> 
+
+		<p><a href="https://build.phonegap.com" rel="nofollow">PhoneGap Build</a>, run by Adobe<br><a href="https://software.intel.com/en-us/html5/tools" rel="nofollow">Intel XDK</a>, run by Intel<br><a href="https://www.ludei.com/" rel="nofollow">Ludei CocoonJS</a>, run by Ludei</p>
+		
+		<p>For the moment I recommend <a href="https://software.intel.com/en-us/html5/tools" rel="nofollow">Intel XDK</a>, it gets the best results. You will need to sign in there first and download the software. In this guide i will show how to export for Android devices. Most steps for other devices are the same and self explanatory.<br><br>
+			Let's start:<br>
+			After you downloaded the software open the Intel XDK. First you need to create a new project.
+			<br><br>
+
+			<img src="assets/images/intelxdk1.png" alt="HTML5 Game" />
+<br><br>
+			Click on "Import Your HTML5 Code Base" and select your exported cordova folder from Construct 2.
+			Set the following settings:
+		<br><br>
+			<img src="assets/images/intelxdk2.png" alt="HTML5 Game" />
+<br><br>
+			A window will popup which will show you a little tutorial about Intel XDK. You can follow it or just click on "No Thanks".
+			After your Project has opened, click at the top panel on projects.
+<br><br>
+
+			<img src="assets/images/intelxdk3.png" alt="HTML5 Game" />
+<br><br>
+			Make sure your project is selected at the left. At the right, click on "-Plugin Management" and then "+Add Plugins to this Project".
+<br><br>
+			<img src="assets/images/intelxdk4.png" alt="HTML5 Game" />
+<br><br>
+			A new window will popup. Now we add AdMob support: Select "Featured Plugins" then "AdMob* Ad Services (old)" and at the bottom right "Add Plugin".
+
+<br><br>
+			<img src="assets/images/intelxdk5.png" alt="HTML5 Game" />
+<br><br>
+			Now you need to fill your app information. Make sure your AppID is unique and your App Version is +1 for each release.
+
+<br><br>
+			<img src="assets/images/intelxdk6.png" alt="HTML5 Game" />
+<br><br>
+			 Also Change the "Cordova CLI Version 5.1.1" to 4.1.2:
+<br><br>
+			<img src="assets/images/intelxdk7.png" alt="HTML5 Game" />
+<br><br>
+			Last but not least add icons which will be seen on the Android devices:
+			<img src="assets/images/includelaunchicons.png" alt="HTML5 Game" />
+<br><br>
+			Now your project is ready to be build. Select the "Build" button at the top panel and click on "Crosswalk for Android" "Build" button.
+
+<br><br>
+			<img src="assets/images/intelxdk8.png" alt="HTML5 Game" />
+<br><br>
+			Build the project:
+<br><br>
+			<img src="assets/images/intelxdk9.png" alt="HTML5 Game" />
+<br><br>
+			The project is building now, this can take a while. In my experience up to 3-5 minutes.
+			When its done you can click the download button and get your files on your machine. 
+
+			<img src="assets/images/intelxdk9.png" alt="HTML5 Game" />
+
+			Extract the .zip. The .zip contains 2 files, upload the ARM version "yourapp.crosswalk.arm.201510312049.apk"
+			to the Google Play Store. That's it.
+
+
+		<hr>
+		
+		
+		<p>Once again, thank you for purchasing this game. As I said at the beginning, I'd be glad to help you if you have any questions relating to this game. No guarantees, but I'll do my best to assist. </p> 
+		
+		<p class="append-bottom alt large"><strong>Tobiasz Brzezinski</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
